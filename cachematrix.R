@@ -1,7 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## inv represents NULL objects; set sets the value of the metrics using the NULL function; getInverse sets the inverse; getInverse gets the inverse.
 
-## Write a short comment describing this function
+## The below parent functions sets and gets the values of an inverse and stores as a list.
 
 makeCacheMatrix <- function(x = matrix()) {
       inv <- NULL
@@ -16,7 +15,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## The below function computes the inverse of the metrics created.
+
+## inv gets the inverse of x; if inv is not null then returns the message "getting cached data" and returns the inv and is solved/computed.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
